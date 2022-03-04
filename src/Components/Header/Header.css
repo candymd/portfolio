@@ -1,0 +1,27 @@
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    font-family: Work Sans, serif;
+}
+header li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+header {
+    position: absolute;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    color: #D6FFF6;
+}
+
+li:hover {
+    background-color: #2e226c;
+    border-radius: 20px;
+
+
+}

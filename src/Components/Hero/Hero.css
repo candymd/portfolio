@@ -1,0 +1,34 @@
+main.hero {
+    background-color: #231651;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    gap: 2rem;
+    text-align: justify-all;
+
+}
+
+main h1 {
+    color: #D6FFF6;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.illustration img {
+    width: 400px;
+    height: 550px;
+}
+
+.socialMedia-icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.socialMedia-icons img:hover{
+    transform: scale(1.2);
+}
