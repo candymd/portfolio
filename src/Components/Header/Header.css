@@ -6,7 +6,7 @@ header ul {
     list-style: none;
     font-family: Work Sans, serif;
 }
-header li {
+header .link {
     padding: 15px;
     cursor: pointer;
 }
@@ -19,7 +19,7 @@ header {
     color: #D6FFF6;
 }
 
-li:hover {
+.link:hover {
     background-color: #2e226c;
     border-radius: 20px;
 
