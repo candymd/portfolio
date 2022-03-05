@@ -1,0 +1,11 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 2.5rem;
+    background-color: #231651;
+}
+
+.projects h1 {
+    color: #D6FFF6;
+}
