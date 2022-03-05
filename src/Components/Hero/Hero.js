@@ -1,5 +1,5 @@
 import "./Hero.css"
-import {github, linkedin, mail} from "../../assets/socialMedia-icons/socialMedia-icons"
+import {github, linkedin, mail} from "../../assets/socialMedia-icons/socialMedia-icons_variables"
 import illustration from "../../assets/illustration.svg"
 
 const Hero = () => {

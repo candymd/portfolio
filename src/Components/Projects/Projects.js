@@ -1,23 +1,24 @@
 import ProjectCard from "./ProjectCard/ProjectCard";
 import './Projects.css'
-import '../../assets/projects-images/matchup.png'
-
+import *  as icon from '../../assets/stack-icons/stack-icons_variables'
 
 const Projects = () => {
 
     const matchup = require('../../assets/projects-images/matchup.png')
-    const portfolio = require('../../assets/projects-images/portfolio.png')
 
     const projects = [
         {
             name: 'Econotravel',
-            image: portfolio,
+            image: matchup,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            stack: [icon.github, icon.spring, icon.figma, icon.git, icon.javascript, icon.java, icon.react],
             github: '',
             demo: ''
         },
         {
             name: 'MatchUp',
             image: matchup,
+            stack: [icon.github, icon.spring, icon.figma, icon.git, icon.javascript, icon.java, icon.react, icon.html],
             github: '',
             demo: ''
         }
@@ -29,7 +30,7 @@ const Projects = () => {
   return (
       <section className="projects section">
           <h1>Projects</h1>
-          {projects.map(project => <ProjectCard project={project}/>)}
+          {projects.map(project => <ProjectCard key={project.name} project={project}/>)}
       </section>
   )
 }

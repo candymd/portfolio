@@ -5,7 +5,7 @@
   font-display: swap;
 }
 * {
-
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Work Sans", monospace;
@@ -23,4 +23,9 @@ body {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.section {
+  height: 100%;
+  scroll-behavior: smooth;
 }
