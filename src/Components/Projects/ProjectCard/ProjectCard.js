@@ -6,7 +6,6 @@ const ProjectCard = ({project}) => {
     const [showHoverLayer, setShowHoverLayer] = useState(false);
     return (
         <div className="project-card" >
-
             <div className="project-image" onMouseEnter={() => setShowHoverLayer(true)}
                  onMouseLeave={() => setShowHoverLayer(false)}>
                 <img src={project.image} alt={"screenshot of " + project.name + " website"} />
@@ -28,6 +27,7 @@ const ProjectCard = ({project}) => {
             </div>
 
         </div>
+
     )
 
 }

@@ -57,4 +57,5 @@ h1 {
   border: 1px solid #231651;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1000;
 }

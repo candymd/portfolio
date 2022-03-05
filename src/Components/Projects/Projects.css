@@ -9,3 +9,8 @@
 .projects h1 {
     color: #D6FFF6;
 }
+
+.react-multi-carousel-list {
+    padding: 2rem 0;
+    cursor: grabbing;
+}
