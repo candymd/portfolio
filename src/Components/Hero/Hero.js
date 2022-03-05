@@ -2,11 +2,13 @@ import "./Hero.css"
 import {github, linkedin, mail} from "../../assets/socialMedia-icons/socialMedia-icons_variables"
 import illustration from "../../assets/illustration.svg"
 
+
 const Hero = () => {
+
     return (
-        <main className="hero section">
+        <main  className="hero section">
         <div className="intro-text">
-            <h1>
+            <h1 >
                 Hello, I am Candy Montero, a barcelona-based web developer.
             </h1>
 

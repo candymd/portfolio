@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard/ProjectCard";
 import './Projects.css'
-import *  as icon from '../../assets/stack-icons/stack-icons_variables'
+import *  as icon from '../../assets/stack-icons/white-stack-icons_variables'
+import {useEffect, useRef} from "react";
 
 const Projects = () => {
 
@@ -23,8 +24,6 @@ const Projects = () => {
             demo: ''
         }
             ]
-
-
 
 
   return (
