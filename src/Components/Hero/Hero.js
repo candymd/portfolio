@@ -4,7 +4,7 @@ import illustration from "../../assets/illustration.svg"
 
 const Hero = () => {
     return (
-        <main className="hero">
+        <main className="hero section">
         <div className="intro-text">
             <h1>
                 Hello, I am Candy Montero, a barcelona-based web developer.

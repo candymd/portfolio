@@ -5,6 +5,7 @@
   font-display: swap;
 }
 * {
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Work Sans", monospace;

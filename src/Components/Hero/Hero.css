@@ -10,6 +10,7 @@ main.hero {
     gap: 2rem;
     text-align: justify-all;
 
+
 }
 
 main h1 {
@@ -24,9 +25,14 @@ main h1 {
 }
 
 .socialMedia-icons {
+    margin-top: -3%;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     max-width: 400px;
+}
+
+.socialMedia-icons img {
+    width: 60px;
 }
 
 .socialMedia-icons img:hover{
