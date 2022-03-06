@@ -21,8 +21,9 @@ const ProjectCard = ({project}) => {
             <div className="description-and-btn">
                 <p>{project.description}</p>
                 <div className="card-btn">
-                    <button>Github</button>
-                    <button>Demo</button>
+                    <a href={project.github}><button>Github</button></a>
+                    {project.demo && <a target="_blank" rel="noreferrer" href={project.demo}><button>Demo</button></a>}
+
                 </div>
             </div>
 

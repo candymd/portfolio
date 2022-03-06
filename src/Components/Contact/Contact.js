@@ -19,7 +19,11 @@ const Contact = () => {
               <label htmlFor="subject">Subject</label>
               <input placeholder="Subject" type="text" name="subject" id="subject"/>
               </div>
-                <textarea placeholder="Enter your message!" name="subject" id="subject" maxLength="250" />
+              <div className="label-input">
+              <label htmlFor="email">Email</label>
+              <input placeholder="Your email" type="email" name="email" id="email"/>
+              </div>
+                <textarea placeholder="Enter your message!" name="message" id="message" maxLength="250" />
               <button type="submit" className="submit-btn" >Send</button>
           </form>
       </section>

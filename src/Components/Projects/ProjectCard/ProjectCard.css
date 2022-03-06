@@ -32,9 +32,10 @@
 }
 
 .description-and-btn {
-    width: 10rem;
+    width: 12rem;
     color: white;
-    text-align: justify;
+   text-align: justify;
+    padding: 10px;
     hyphens: auto;
     display: flex;
     flex-direction: column;
@@ -110,4 +111,12 @@
 
 .stack-icons > i {
     font-size: 80px;
+}
+
+.react-multi-carousel-dot--active button{
+    background: #2e226c;
+}
+
+.react-multi-carousel-dot button {
+    border-color: #D6FFF6;
 }
