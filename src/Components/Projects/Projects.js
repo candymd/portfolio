@@ -13,6 +13,7 @@ const Projects = () => {
     const musicPlayer = require('../../assets/projects-images/music-player.png')
     const myBookTracker = require('../../assets/projects-images/myBookTracker.png')
     const legacyGames = require('../../assets/projects-images/legacy-games.png')
+    const filmCity = require('../../assets/projects-images/filmCity.png')
 
     const projects = [
         {
@@ -51,7 +52,7 @@ const Projects = () => {
         },
         {
             name: 'FilmCity',
-            image: matchup,
+            image: filmCity,
             description: 'Backend for an online videoclub catalog where you can rent and rate movies.',
             stack: [icon.github, icon.git, icon.java, icon.spring],
             github: 'https://github.com/candymd/bftp2-project3-starting-code',
