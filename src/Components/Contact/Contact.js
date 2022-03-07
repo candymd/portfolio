@@ -1,10 +1,26 @@
 import './Contact.css'
+import {useRef} from "react";
+import * as emailjs from "@emailjs/browser";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_a4opov2', 'template_yhku7ml', form.current, 'FxJFbtOtkP3TcNi2c')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+
   return (
       <section className="contact section">
         <h1>Contact me!</h1>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
               <div className="name-and-lastName">
                   <div className="label-input">
                       <label htmlFor="name">Name</label>

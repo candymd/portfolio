@@ -1,6 +1,5 @@
 import * as icon from '../../assets/stack-icons/colored-stack-icons_variables'
 import './Skills.css'
-import {useEffect, useRef} from "react";
 
 const Skills = () => {
 
