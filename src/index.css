@@ -59,3 +59,7 @@ h1 {
   cursor: pointer;
   z-index: 1000;
 }
+
+.scrollToTop-active {
+  display: none;
+}

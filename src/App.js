@@ -4,21 +4,22 @@ import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import {useScrollHandler} from './Components/ScrollHandler'
 
 function App() {
 
+    const scroll = useScrollHandler()
 
-
- const scrollToTop = () => {
+    const scrollToTop = () => {
      window.scrollTo({
          top: 0,
          behavior: 'smooth'
      });
- }
+    }
 
   return (
     <div className="App">
-      <div onClick={scrollToTop} className="scrollToTop">
+      <div onClick={scrollToTop} className={!scroll ? 'scrollToTop-active' : 'scrollToTop'}>
         <i className="fa-solid fa-arrow-up"/>
       </div>
       <Header  />
