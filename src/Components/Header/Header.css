@@ -22,14 +22,16 @@ header {
     color: #D6FFF6;
 }
 
-.link:hover {
-    background: #231651;
-    border-radius: 20px;
+.header > nav > ul > li> a:hover {
+    background: #35206f;
 
 }
 
 .header-active {
     background-color: #3A2C6D;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-
+}
+li > a:hover {
+    background: #231651;
+    border-radius: 20px;
 }

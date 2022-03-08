@@ -28,8 +28,8 @@ html, body {
 .section {
   height: 100vh;
   scroll-behavior: smooth;
-  padding: 1rem;
   margin: 0;
+  padding: 1.5rem;
 }
 
 h1 {
