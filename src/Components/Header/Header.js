@@ -1,11 +1,13 @@
 import "./Header.css"
 import {Link} from "react-scroll";
+import {useScrollHandler} from '../ScrollHandler'
 
 const Header = () => {
 
+    const scroll = useScrollHandler();
 
     return (
-        <header className="header">
+        <header className={scroll ? "header-active" : "header"}>
             <nav>
                 <ul>
                     <li><Link className="link" activeClass="active" to="hero" spy={true} smooth={true} duration={500}>Home</Link></li>

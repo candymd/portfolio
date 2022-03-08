@@ -6,13 +6,15 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+
+
+
  const scrollToTop = () => {
      window.scrollTo({
          top: 0,
          behavior: 'smooth'
      });
  }
-
 
   return (
     <div className="App">
