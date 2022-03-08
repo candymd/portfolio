@@ -5,6 +5,7 @@ import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import {useScrollHandler} from './Components/ScrollHandler'
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       </div>
       <Header  />
       <Hero />
+        <AboutMe />
       <Skills />
       <Projects />
       <Contact/>
