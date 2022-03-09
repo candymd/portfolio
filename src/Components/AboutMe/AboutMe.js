@@ -1,4 +1,4 @@
-import homeOffice from '../../assets/Home Office.svg'
+import homeOffice from '../../assets/HomeOffice.svg'
 import './AboutMe.css'
 
 const AboutMe = () => {
