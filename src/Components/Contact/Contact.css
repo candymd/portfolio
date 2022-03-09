@@ -7,10 +7,9 @@
     gap: 1rem;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     height: 80%;
     margin: 0 auto;
-    padding: 0 3rem 3rem;
 
 }
 
@@ -54,7 +53,7 @@ textarea:focus, input:focus{
 .contact textarea {
     text-indent: 20px;
     padding: 10px;
-    border-radius: 24px;
+    border-radius: 8px;
     width: 100%;
     height: 150px;
     resize: none;
@@ -64,13 +63,47 @@ textarea:focus, input:focus{
  section.contact.section > form > button {
     margin: 1.5rem auto;
     width: 125px;
-    height: 40px;
+    height: 90px;
     cursor: pointer;
      background: white;
      border: none;
-     border-radius: 8px;
+     border-radius: 15px;
 }
 
 section.contact.section > form > button:hover {
      background-color: #f5f5f5;
  }
+
+ form > p {
+    padding: 0 5px;
+    margin: 0;
+    align-self: flex-end;
+ }
+
+ form .active {
+     animation: shake 1000ms timing-function delay 1 direction fill-mode;
+     color: red;
+     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+     transform: translate3d(0, 0, 0);
+     backface-visibility: hidden;
+     perspective: 1000px;
+   }
+   
+   @keyframes shake {
+     10%, 90% {
+       transform: translate3d(-1px, 0, 0);
+     }
+     
+     20%, 80% {
+       transform: translate3d(2px, 0, 0);
+     }
+   
+     30%, 50%, 70% {
+       transform: translate3d(-4px, 0, 0);
+     }
+   
+     40%, 60% {
+       transform: translate3d(4px, 0, 0);
+     }
+   }
+ 

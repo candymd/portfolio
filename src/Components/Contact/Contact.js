@@ -1,9 +1,10 @@
 import './Contact.css'
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import * as emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const form = useRef();
+    const [maxLength, setMaxLength] = useState();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,6 +16,12 @@ const Contact = () => {
                 console.log(error.text);
             });
     };
+
+
+    const handleMaxInput = (e) =>  {
+          let target =  e.target.value.length.toString();
+          setMaxLength(target)
+    }
 
 
   return (
@@ -39,7 +46,8 @@ const Contact = () => {
               <label htmlFor="email">Email</label>
               <input placeholder="Your email" type="email" name="email" id="email"/>
               </div>
-                <textarea placeholder="Enter your message!" name="message" id="message" maxLength="250" />
+                <textarea onChange={handleMaxInput} placeholder="Enter your message!" name="message" id="message" maxLength="250" />
+                <p className={maxLength >= 250 ? 'active' : ''}>{maxLength === undefined ? '0': maxLength}/250</p>
               <button type="submit" className="submit-btn" >Send</button>
           </form>
       </section>

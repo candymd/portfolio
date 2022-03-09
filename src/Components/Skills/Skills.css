@@ -1,4 +1,5 @@
 .skills {
+    height: 100.1vh;
     background-color: #D6FFF6;
 }
 
@@ -8,6 +9,7 @@
 
 .skill-grid {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
@@ -17,8 +19,8 @@
 
 .skill-card {
     margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: #231651;
     display: flex;
     flex-direction: column;
@@ -35,11 +37,52 @@
     margin: 15px 0;
 }
 
+.skill-card img:hover {
+    animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+  @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  @keyframes wiggle {
+    0% {transform: rotate(180deg);}
+    25% {transform: rotate(-180deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-80deg);}
+    100% {transform: rotate(0deg);}
+  }
+
 .skill-card p {
     padding: 0;
     margin: 0;
 }
 
 .skill-card:hover {
+    
     transform: scale(1.2);
 }
