@@ -29,6 +29,7 @@
     
     .aboutMe {
         align-items: center;
+        justify-content: space-evenly;
     }
 
     .description-and-image p {
