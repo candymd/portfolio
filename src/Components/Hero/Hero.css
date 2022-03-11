@@ -37,7 +37,7 @@ main h1 {
     transform: scale(1.2);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     main.hero {
         justify-content: space-around;
         flex-direction: column;

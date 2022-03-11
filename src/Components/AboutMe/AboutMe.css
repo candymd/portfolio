@@ -25,7 +25,7 @@
     height: 450px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
     .aboutMe {
         align-items: center;
