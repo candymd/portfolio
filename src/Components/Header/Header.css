@@ -36,3 +36,28 @@ li > a:hover {
     background: #231651;
     border-radius: 20px;
 }
+
+
+@media only screen and (max-width: 400px) {
+
+    .header-active {
+        height: 100%;
+        box-shadow: none;
+        justify-content: space-around;
+    }
+
+    header {
+        color: #D6FFF6;
+        position: absolute;
+        width: 100%;
+    }
+
+    header ul {
+        height: 100%;
+        font-size: 25px;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+
+}

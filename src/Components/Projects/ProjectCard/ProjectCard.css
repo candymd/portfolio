@@ -34,7 +34,7 @@
 .description-and-btn {
     width: 12rem;
     color: white;
-   text-align: justify;
+    text-align: left;
     padding: 10px;
     hyphens: auto;
     display: flex;
@@ -89,7 +89,7 @@
 .hover-layer h1 {
     font-weight: 700;
     margin-top: 0.5rem;
-     margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .stack-icons {
@@ -113,3 +113,29 @@
     font-size: 80px;
 }
 
+@media only screen and (max-width: 400px) {
+    .mobile-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5rem;
+       
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-image img {
+        object-fit: contain;
+    }
+    
+    .card-btn {
+        flex-direction: row;
+    }
+
+    .projects {
+        height: 100%;
+        justify-content:  center;
+    }
+}

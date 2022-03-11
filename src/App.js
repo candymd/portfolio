@@ -6,10 +6,13 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import {useScrollHandler} from './Components/ScrollHandler'
 import AboutMe from "./Components/AboutMe/AboutMe";
+import BurgerMenu from "./Components/Header/BurgerMenu";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function App() {
 
     const scroll = useScrollHandler()
+    const matches = useMediaQuery('(max-width:600px)');
 
     const scrollToTop = () => {
      window.scrollTo({
@@ -20,14 +23,18 @@ function App() {
 
   return (
     <div className="App">
-      <div onClick={scrollToTop} className={!scroll ? 'scrollToTop-active' : 'scrollToTop'}>
-        <i className="fa-solid fa-arrow-up"/>
-      </div>
-      <Header  />
-      <Hero />
-        <AboutMe />
+   {!matches && 
+    <div onClick={scrollToTop} className={!scroll ? 'scrollToTop-active' : 'scrollToTop'}>
+    <i className="fa-solid fa-arrow-up"/>
+  </div>
+   }  
+
+   {matches && <BurgerMenu /> }
+    {!matches && <Header />}
+      <Hero matches={matches} />
+        <AboutMe matches={matches} />
       <Skills />
-      <Projects />
+      <Projects matches={matches} />
       <Contact/>
       <Footer />
     </div>

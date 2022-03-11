@@ -1,15 +1,17 @@
 import "./Hero.css"
 import {github, linkedin, mail} from "../../assets/socialMedia-icons/socialMedia-icons_variables"
 import illustration from "../../assets/illustration.svg"
+import laptop from "../../assets/laptop.gif"
 
 
-const Hero = () => {
+const Hero = ({matches}) => {
+
 
     return (
         <main  className="hero section">
         <div className="intro-text">
             <h1 >
-                Hello, I am Candy Montero, a barcelona-based web developer.
+                Hello, I am Candy Montero, a Barcelona-based web developer.
             </h1>
 
             <div className="socialMedia-icons">
@@ -25,8 +27,13 @@ const Hero = () => {
             </div>
         </div>
             <div className="illustration">
-                <img alt="computer, plant and coffee" src={illustration}/>
-            </div>
+
+            {matches ? 
+             <img alt="computer, plant and coffee" src={laptop}/> :  <img className="laptop" alt="computer, plant and coffee" src={illustration}/>
+        }
+           
+        </div>
+        
         </main>
     )
 

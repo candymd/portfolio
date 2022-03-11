@@ -31,22 +31,22 @@ const Contact = () => {
               <div className="name-and-lastName">
                   <div className="label-input">
                       <label htmlFor="name">Name</label>
-                      <input placeholder="Name" type="text" name="name" id="name"/>
+                      <input placeholder="Name" required type="text" name="name" id="name"/>
                   </div>
                   <div className="label-input">
                       <label htmlFor="lastName">Last name</label>
-                      <input placeholder="Last name" type="text" name="lastName" id="lastName"/>
+                      <input placeholder="Last name" required type="text" name="lastName" id="lastName"/>
                   </div>
               </div>
               <div className="label-input">
               <label htmlFor="subject">Subject</label>
-              <input placeholder="Subject" type="text" name="subject" id="subject"/>
+              <input placeholder="Subject" required type="text" name="subject" id="subject"/>
               </div>
               <div className="label-input">
               <label htmlFor="email">Email</label>
-              <input placeholder="Your email" type="email" name="email" id="email"/>
+              <input placeholder="Your email" required type="email" name="email" id="email"/>
               </div>
-                <textarea onChange={handleMaxInput} placeholder="Enter your message!" name="message" id="message" maxLength="250" />
+                <textarea onChange={handleMaxInput} placeholder="Enter your message!" required name="message" id="message" maxLength="250" />
                 <p className={maxLength >= 250 ? 'active' : ''}>{maxLength === undefined ? '0': maxLength}/250</p>
               <button type="submit" className="submit-btn" >Send</button>
           </form>

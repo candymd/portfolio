@@ -3,8 +3,9 @@ import './Projects.css'
 import *  as icon from '../../assets/stack-icons/white-stack-icons_variables'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import MobileCard from "./ProjectCard/MobileCard";
 
-const Projects = () => {
+const Projects = ({matches}) => {
 
     const matchup = require('../../assets/projects-images/matchup.png')
     const econotravel = require('../../assets/projects-images/econotravel.png')
@@ -99,8 +100,9 @@ const Projects = () => {
                     autoPlaySpeed={4000}
                     keyBoardControl={true}
                     transitionDuration={600} showThumbs={false}>
-              {projects.map(project =>
-                  <ProjectCard key={project.name} project={project}/>)}
+              {projects.map(project => !matches ? 
+                  (<ProjectCard matches={matches} key={project.name} project={project}/>) : (<MobileCard matches={matches} key={project.name} project={project}/>))}
+
           </Carousel>
       </section>
   )

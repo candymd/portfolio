@@ -25,8 +25,8 @@ const Skills = () => {
             name: 'JAVA'
         },
         {
-            image: icon.colored_spring,
-            name: 'SPRING'
+            image: icon.colored_springBoot,
+            name: 'SPRINGBOOT'
         },
         {
             image: icon.colored_tailwind,
@@ -34,7 +34,7 @@ const Skills = () => {
         },
         {
             image: icon.colored_boostrap,
-            name: 'BOOSTRAP'
+            name: 'BOOTSTRAP'
         },
         {
             image: icon.colored_git,
@@ -47,6 +47,10 @@ const Skills = () => {
         {
             image: icon.colored_figma,
             name: 'FIGMA'
+        },
+        {
+            image: icon.colored_gradle,
+            name: 'GRADLE'
         },
     ]
 

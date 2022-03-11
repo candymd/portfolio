@@ -6,7 +6,6 @@ main.hero {
     overflow: hidden;
     padding-right: 4rem;
     padding-left: 4rem;
-    gap: 2rem;
     text-align: justify-all;
 }
 
@@ -27,6 +26,7 @@ main h1 {
     display: flex;
     gap: 20px;
     max-width: 400px;
+    align-items: center;
 }
 
 .socialMedia-icons img {
@@ -36,3 +36,33 @@ main h1 {
 .socialMedia-icons img:hover{
     transform: scale(1.2);
 }
+
+@media only screen and (max-width: 400px) {
+    main.hero {
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .intro-text {
+        align-content: space-around;
+        justify-self: center;
+        width: 100%;  
+    }
+
+    main h1 {
+        font-size: 2.9rem;
+        text-align: left;
+    }
+
+    .socialMedia-icons {
+        justify-content: space-around;
+    }
+
+    .illustration > img {
+     width: 100%;
+     height: 300px;
+    }
+
+
+  }

@@ -1,9 +1,11 @@
 import './ProjectCard.css'
 import {useState} from "react";
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, matches}) => {
 
     const [showHoverLayer, setShowHoverLayer] = useState(false);
+    
+
     return (
         <div className="project-card" >
             <div className="project-image" onMouseEnter={() => setShowHoverLayer(true)}
@@ -19,9 +21,9 @@ const ProjectCard = ({project}) => {
                 }
             </div>
             <div className="description-and-btn">
-                <p>{project.description}</p>
+              {!matches && <p>{project.description}</p>} 
                 <div className="card-btn">
-                    <a href={project.github}><button>Github</button></a>
+                    <a target="_blank" rel="noreferrer" href={project.github}><button>Github</button></a>
                     {project.demo && <a target="_blank" rel="noreferrer" href={project.demo}><button>Demo</button></a>}
 
                 </div>

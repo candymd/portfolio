@@ -24,3 +24,21 @@
    width: 550px;
     height: 450px;
 }
+
+@media only screen and (max-width: 400px) {
+    
+    .aboutMe {
+        align-items: center;
+    }
+
+    .description-and-image p {
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    }
+
+    .description-and-image {
+        margin: 0 auto;
+    }
+
+}
