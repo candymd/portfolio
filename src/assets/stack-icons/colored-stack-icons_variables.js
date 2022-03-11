@@ -82,7 +82,7 @@ const colored_react = (
 />
 
 const colored_gradle = <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" 
-style={{mixBlendMode: 'color-burn'}}/>
+style={{mixBlendMode: 'color-burn'}} alt=""/>
 
 
 
