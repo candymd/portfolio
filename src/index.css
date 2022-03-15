@@ -72,3 +72,25 @@ h1 {
 }
 
 }
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #baf0e3;
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #3A2C6D; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #56429e; 
+}
