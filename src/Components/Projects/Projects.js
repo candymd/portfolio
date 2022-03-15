@@ -100,7 +100,7 @@ const Projects = ({matchesTablet, matchesMobile}) => {
                     autoPlaySpeed={4000}
                     keyBoardControl={true}
                     transitionDuration={600} showThumbs={false}>
-              {projects.map(project => (!matchesTablet || matchesMobile) ? 
+              {projects.map(project => !(matchesTablet || matchesMobile) ? 
                   (<ProjectCard matchesMobile={matchesMobile} matchesTablet={matchesTablet} key={project.name} project={project}/>) :
                    (<MobileCard matchesMobile={matchesMobile} matchesTablet={matchesTablet} key={project.name} project={project}/>))}
 
