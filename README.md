@@ -8,14 +8,19 @@ I'm a growing full stack developer who's passionate about UI Design and Frontend
 
 
 ## Tech Stack
- React, JS, CSS.   
+ React, JS, JSX and CSS.   
 
- **React libraries**: @emailJs/browser and react-multi-carousel
-
+ **React libraries**: @emailJs/browser, react-multi-carousel and react-testing-library
 
 
 
 ## Screenshots
+
+**Figma mockup**
+
+![Screenshot](https://github.com/candymd/portfolio/blob/main/src/assets/projects-images/figma.png)
+
+**Live website**
 
 ![Screenshot](https://github.com/candymd/portfolio/blob/main/src/assets/projects-images/portfolio.png)
 ![Screenshot](https://github.com/candymd/portfolio/blob/main/src/assets/projects-images/portfolio-skills-section.png)
