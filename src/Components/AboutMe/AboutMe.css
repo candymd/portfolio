@@ -9,9 +9,10 @@
 .description-and-image {
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
-    align-items: center;
+    height: 100%;
+    width: 100%;
     gap: 1rem;
+    align-items: center;
 }
 
 .description-and-image p {
