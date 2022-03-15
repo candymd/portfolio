@@ -107,6 +107,8 @@ section.contact.section > form > button:hover {
      }
    }
 
+   /* Mobile media queries */
+
    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
      input {
@@ -117,5 +119,18 @@ section.contact.section > form > button:hover {
       width: 100%;
     }
 
+  }
+
+  /* Tablet media queries */
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+    .contact form {
+      width: 100%;
+    }
+  
   }
  

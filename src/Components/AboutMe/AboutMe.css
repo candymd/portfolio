@@ -22,9 +22,12 @@
     width: 70%;
 }
 .description-and-image img {
-   width: 550px;
+    width: 550px;
     height: 450px;
 }
+
+
+/* Mobile media queries */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
@@ -34,13 +37,19 @@
     }
 
     .description-and-image p {
-    width: 100%;
-    font-size: 23px;
-    text-align: center;
+        width: 100%;
+        font-size: 4.5vw;
+        text-align: center;
     }
 
     .description-and-image {
+        flex-direction: column;
         margin: 0 auto;
+    }
+
+    .description-and-image img {
+        width: 70%;
+        height: 50%;
     }
 
 }

@@ -1,7 +1,7 @@
 import homeOffice from "../../assets/HomeOffice.svg";
 import "./AboutMe.css";
 
-const AboutMe = ({matches}) => {
+const AboutMe = ({matchesTablet, matchesMobile}) => {
   return (
     <section className="aboutMe section">
       <h1>About me</h1>
@@ -20,7 +20,7 @@ const AboutMe = ({matches}) => {
             diversity and inclusion, especially for women in tech.
           </q>
         </p>
-        {!matches && <img src={homeOffice} alt={homeOffice + "illustration"} /> }
+        {(!matchesTablet || matchesMobile) && <img src={homeOffice} alt={homeOffice + "illustration"} /> }
         </div>
     </section>
   );

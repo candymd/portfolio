@@ -4,7 +4,7 @@ import illustration from "../../assets/illustration.svg"
 import laptop from "../../assets/laptop.gif"
 
 
-const Hero = ({matches}) => {
+const Hero = ({matchesMobile, matchesTablet}) => {
 
 
     return (
@@ -28,7 +28,7 @@ const Hero = ({matches}) => {
         </div>
             <div className="illustration">
 
-            {matches ? 
+            {matchesTablet || matchesMobile ? 
              <img alt="computer, plant and coffee" src={laptop}/> :  <img className="laptop" alt="computer, plant and coffee" src={illustration}/>
         }
            

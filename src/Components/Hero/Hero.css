@@ -37,7 +37,14 @@ main h1 {
     transform: scale(1.2);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+/* Mobile media queries */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    
     main.hero {
         justify-content: space-around;
         flex-direction: column;
@@ -65,5 +72,5 @@ main h1 {
      height: 300px;
     }
 
-
   }
+

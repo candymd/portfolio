@@ -86,7 +86,12 @@
     transform: scale(1.2);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Tablet and Mobile media queries */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
     .skills {
         height: 100%;
         overflow: scroll;
@@ -117,3 +122,5 @@
     }
 
 }
+
+

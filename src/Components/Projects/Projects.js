@@ -5,7 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MobileCard from "./ProjectCard/MobileCard";
 
-const Projects = ({matches}) => {
+const Projects = ({matchesTablet, matchesMobile}) => {
 
     const matchup = require('../../assets/projects-images/matchup.png')
     const econotravel = require('../../assets/projects-images/econotravel.png')
@@ -100,8 +100,9 @@ const Projects = ({matches}) => {
                     autoPlaySpeed={4000}
                     keyBoardControl={true}
                     transitionDuration={600} showThumbs={false}>
-              {projects.map(project => !matches ? 
-                  (<ProjectCard matches={matches} key={project.name} project={project}/>) : (<MobileCard matches={matches} key={project.name} project={project}/>))}
+              {projects.map(project => (!matchesTablet || matchesMobile) ? 
+                  (<ProjectCard matchesMobile={matchesMobile} matchesTablet={matchesTablet} key={project.name} project={project}/>) :
+                   (<MobileCard matchesMobile={matchesMobile} matchesTablet={matchesTablet} key={project.name} project={project}/>))}
 
           </Carousel>
       </section>
