@@ -68,6 +68,7 @@ textarea:focus, input:focus{
      background: white;
      border: none;
      border-radius: 15px;
+     color: black;
 }
 
 section.contact.section > form > button:hover {
