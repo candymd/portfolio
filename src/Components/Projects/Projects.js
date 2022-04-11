@@ -15,6 +15,7 @@ const Projects = ({matchesTablet, matchesMobile}) => {
     const myBookTracker = require('../../assets/projects-images/myBookTracker.png')
     const legacyGames = require('../../assets/projects-images/legacy-games.png')
     const filmCity = require('../../assets/projects-images/filmCity.png')
+    const appaches = require('../../assets/projects-images/appaches.png')
 
     const projects = [
         {
@@ -46,7 +47,7 @@ const Projects = ({matchesTablet, matchesMobile}) => {
         {
             name: 'Lo-fi music player',
             image: musicPlayer,
-            description: 'Simple and minimalist javascript lo-fi themed music player.',
+            description: 'Simple and minimalistic javascript lo-fi themed music player.',
             stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css],
             github: 'https://github.com/candymd/music-player',
             demo: 'https://candymd.github.io/music-player/'
@@ -82,6 +83,12 @@ const Projects = ({matchesTablet, matchesMobile}) => {
             stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css],
             github: 'https://github.com/candymd/femhoot-web',
             demo: ''
+        },
+        {
+            name: 'Appaches',
+            image: appaches,
+            description: 'With Appaches you can easily manage your shared expenses with friends, family or flatmates.',
+            stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css, icon.react, icon.spring, icon.figma],
         }
             ]
 

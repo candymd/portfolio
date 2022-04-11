@@ -6,7 +6,6 @@ import * as emailjs from "@emailjs/browser";
 const Contact = () => {
     const form = useRef();
     const [maxLength, setMaxLength] = useState();
-    console.log(process.env.REACT_APP_SERVICE_ID)
 
     const sendEmail = (e) => {
         e.preventDefault();
