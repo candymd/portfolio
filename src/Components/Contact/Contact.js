@@ -2,14 +2,16 @@ import './Contact.css'
 import {useRef, useState} from "react";
 import * as emailjs from "@emailjs/browser";
 
+
 const Contact = () => {
     const form = useRef();
     const [maxLength, setMaxLength] = useState();
+    console.log(process.env.REACT_APP_SERVICE_ID)
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_a4opov2', 'template_yhku7ml', form.current, 'FxJFbtOtkP3TcNi2c')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

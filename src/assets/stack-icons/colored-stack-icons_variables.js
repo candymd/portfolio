@@ -19,7 +19,7 @@ const colored_react = (
       alt=""
     />
   );
-  const colored_boostrap = (
+  const colored_bootstrap = (
     <img
       className="skill-image"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
@@ -90,7 +90,7 @@ style={{mixBlendMode: 'color-burn'}} alt=""/>
     colored_react,
     colored_spring,
     colored_tailwind,
-    colored_boostrap,
+    colored_bootstrap,
     colored_css,
     colored_figma,
     colored_git,

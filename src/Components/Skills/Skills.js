@@ -33,7 +33,7 @@ const Skills = () => {
             name: 'TAILWIND'
         },
         {
-            image: icon.colored_boostrap,
+            image: icon.colored_bootstrap,
             name: 'BOOTSTRAP'
         },
         {

@@ -46,7 +46,7 @@ const Projects = ({matchesTablet, matchesMobile}) => {
         {
             name: 'Lo-fi music player',
             image: musicPlayer,
-            description: 'Simple and minimalistic javascript lo-fi themed music player.',
+            description: 'Simple and minimalist javascript lo-fi themed music player.',
             stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css],
             github: 'https://github.com/candymd/music-player',
             demo: 'https://candymd.github.io/music-player/'
@@ -71,7 +71,7 @@ const Projects = ({matchesTablet, matchesMobile}) => {
             name: 'MyBookTracker',
             image: myBookTracker,
             description: 'Web app for keeping a track of your books.',
-            stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css, icon.boostrap, icon.spring],
+            stack: [icon.github, icon.git, icon.javascript, icon.html, icon.css, icon.bootstrap, icon.spring],
             github: 'https://github.com/candymd/MyBookTracker',
             demo: ''
         },

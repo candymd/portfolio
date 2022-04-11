@@ -25,7 +25,6 @@ const ProjectCard = ({project, matches}) => {
                 <div className="card-btn">
                     <a target="_blank" rel="noreferrer" href={project.github}><button>Github</button></a>
                     {project.demo && <a target="_blank" rel="noreferrer" href={project.demo}><button>Demo</button></a>}
-
                 </div>
             </div>
 
