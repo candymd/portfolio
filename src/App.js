@@ -11,24 +11,17 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 function App() {
 
-    const scroll = useScrollHandler()
+    const {scrollPosition, scrollToTop} = useScrollHandler()
     const matchesMobile = useMediaQuery('(min-device-width : 320px) and (max-width:480px)');
     const matchesTablet = useMediaQuery('(min-width:481px) and (max-width:1023px');
 
-    const scrollToTop = () => {
-     window.scrollTo({
-         top: 0,
-         behavior: 'smooth'
-     });
-    }
-
   return (
     <div className="App">
-   {!matchesMobile && 
-    <div onClick={scrollToTop} className={!scroll ? 'scrollToTop-active' : 'scrollToTop'}>
+   {!matchesMobile &&
+    <div onClick={scrollToTop} className={scrollPosition ? 'scrollToTop' : 'scrollToTop-active'}>
     <i className="fa-solid fa-arrow-up"/>
   </div>
-   }  
+   }
 
    {matchesMobile && <BurgerMenu /> }
     {!matchesMobile && <Header />}
