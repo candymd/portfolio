@@ -60,6 +60,14 @@ textarea:focus, input:focus{
     border: none;
 }
 
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
  section.contact.section > form > button {
     margin: 1.5rem auto;
     width: 125px;
@@ -89,20 +97,20 @@ section.contact.section > form > button:hover {
      backface-visibility: hidden;
      perspective: 1000px;
    }
-   
+
    @keyframes shake {
      10%, 90% {
        transform: translate3d(-1px, 0, 0);
      }
-     
+
      20%, 80% {
        transform: translate3d(2px, 0, 0);
      }
-   
+
      30%, 50%, 70% {
        transform: translate3d(-4px, 0, 0);
      }
-   
+
      40%, 60% {
        transform: translate3d(4px, 0, 0);
      }
@@ -111,7 +119,7 @@ section.contact.section > form > button:hover {
    /* Mobile media queries */
 
    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    
+
      input {
       width: 100%;
     }
@@ -124,14 +132,13 @@ section.contact.section > form > button:hover {
 
   /* Tablet media queries */
 
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-  
+
     .contact form {
       width: 100%;
     }
-  
+
   }
- 
